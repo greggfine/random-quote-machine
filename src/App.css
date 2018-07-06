@@ -1,28 +1,59 @@
 .App {
-  text-align: center;
+  display: flex;
+  height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.btn {
+  background-color: pink;
+  border: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+  clear: both;
+}
+
+#quote {
+  margin: auto;
+  width: 500px;
+  color: red;
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+#quote-author {
+  padding-top: 30px;
+  float: right;
+  font-size: 1.2rem;
+  opacity: .8;
+}
+
+#quote-box {
+  width: 750px;
+  height: 400px;
   padding: 20px;
-  color: white;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.twitter {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 7px;
+  text-align: center;
+  padding: 20px;
+  background-color: pink;
+  width: 40px;
 }

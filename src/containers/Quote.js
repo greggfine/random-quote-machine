@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NewQuoteBtn from '../components/NewQuoteBtn';
+import Twitter from '../components/Twitter';
 import _ from 'lodash'
 // import quotes from '../quotes.json';
 
@@ -26,8 +27,9 @@ class Quote extends Component {
     }
 
     displayQuote = () => {
+       const shuffledQuotes = _.shuffle(this.state.quotes);
        this.setState({
-           quotes: _.shuffle(this.state.quotes)
+           quotes: shuffledQuotes
        })
 
     }
@@ -35,15 +37,19 @@ class Quote extends Component {
         const { quotes } = this.state;
         const quoteArr = quotes.map(entry => {
             return <div>
-                        <h1>{entry.quote}</h1>
-                        <p>{entry.author}</p>
+                        <i className="fa fa-quote-left"></i>
+                        <span> {entry.quote}</span>
+                        <p id="quote-author">{entry.author}</p>
                    </div>
         })
         return (
-            <React.Fragment>
-               {quoteArr[0]}
-               <NewQuoteBtn displayQuote={this.displayQuote}/>
-            </React.Fragment>
+            <div id="quote-box">
+               <blockquote id="quote">{quoteArr[0]}</blockquote>
+               <div className="btn-group">
+                    <Twitter quote={this.state.quotes[0].quote}/>
+                    <NewQuoteBtn  displayQuote={this.displayQuote}/>
+               </div>
+            </div>
         );
     }
 }
