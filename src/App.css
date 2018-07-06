@@ -1,17 +1,27 @@
 .App {
   display: flex;
   height: 100vh;
+  background-image: url('http://daumanpictures.com/wp-content/uploads/2012/12/Sun-Ra.jpg');
+  /* background-image: url('https://ink19.com/wp-content/uploads/2016/01/ftr-sun-ra-revisited.jpeg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .btn {
-  background-color: pink;
+  background-color: rgb(187, 137, 62);
   border: none;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: .01rem 1.2rem;
   font-size: 1.2rem;
   border-radius: 5px;
   outline: none;
   cursor: pointer;
+  box-shadow: 5px 6px black;
+  transition: opacity 300ms;
+}
+
+.btn:hover {
+  opacity: .80;
 }
 
 .btn-group {
@@ -23,7 +33,7 @@
 #quote {
   margin: auto;
   width: 500px;
-  color: red;
+  color: rgb(94, 17, 17);
   font-size: 2rem;
   line-height: 40px;
 }
@@ -38,13 +48,15 @@
 #quote-box {
   width: 750px;
   height: 400px;
-  padding: 20px;
+  padding: 40px;
   background-color: #fff;
   margin: auto;
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  box-shadow: 13px 18px 14px 1px #221212;
+
 }
 
 .twitter {
@@ -53,7 +65,13 @@
   text-align: center;
   border-radius: 7px;
   text-align: center;
-  padding: 20px;
-  background-color: pink;
+  padding: 15px;
+  background-color: rgb(187, 137, 62);
   width: 40px;
+  box-shadow: 5px 6px black;
+  transition: opacity 300ms;
+}
+
+.twitter:hover {
+  opacity: .80;
 }

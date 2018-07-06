@@ -11,17 +11,29 @@ class Quote extends Component {
         this.state = {
             quotes: [
                 {
-                    quote: "It's not what you do for your children, but what you have taught them to do for themselves, that will make them successful human beings.",
-                    author: "-Ann Landers"
+                    quote: "Space is not only high, it's low. It's a bottomless pit.",
+                    author: "-Sun Ra"
                 },
                 {
-                    quote: "Whatever the mind of man can conceive and believe, it can achieve.",
-                    author: "-Napoleon Hill"
+                    quote: "If death is the absence of life, then death's death is life.",
+                    author: "-Sun Ra"
                 },
                 {
-                    quote: "Strive not to be a success, but rather to be of value.",
-                    author: "-Albert Einstein"
-                }
+                    quote: "The possible has been tried and failed. Now it's time to try the impossible.",
+                    author: "-Sun Ra"
+                },
+                {
+                    quote: "Jazz is there and gone. It happens. You have to be present for it. That simple.",
+                    author: "-Keith Jarrett"
+                },
+                {
+                    quote: "One thing you learn: if you want to reveal yourself, you also have to know where to stop.",
+                    author: "-Keith Jarrett"
+                },
+                {
+                    quote: "I can't even tolerate my own playing on electric keyboards. It's not about the musical ideas - the sound itself is toxic. It's like eating plastic broccoli.",
+                    author: "-Keith Jarrett"
+                },
             ]
         };
     }
